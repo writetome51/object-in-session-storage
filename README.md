@@ -1,7 +1,7 @@
-# ObjectInLocalStorage
+# ObjectInSessionStorage
 
 A TypeScript/JavaScript class representing an object or array stored in the  
-browser's `localStorage`. The item is identified by a unique string `this.key`  
+browser's `sessionStorage`. The item is identified by a unique string `this.key`  
 and stored as a `key:value` pair.   
 When you call the constructor, if the `key` argument is a string that isn't  
 empty and the `value` argument is not undefined or null, the item will be  
@@ -115,12 +115,12 @@ protected   _errorIfPropertyHasNoValue(
 // It might be a good idea to name each class instance after its key.
 // After instantiation, you wouldn't modify its `key` property.
 
-let user1 = new ObjectInLocalStorage(
+let user1 = new ObjectInSessionStorage(
     'user1',
     {username: 'papasmurf', password: 'i_love_smurfette'}
 );
 
-let user2 = new ObjectInLocalStorage(
+let user2 = new ObjectInSessionStorage(
     'user2',
     {username: 'smurfette', password: 'i_love_papa'}
 );
@@ -128,33 +128,32 @@ let user2 = new ObjectInLocalStorage(
 // Or, you could create a singleton instance to handle all stored objects,
 // and change its `key` when you want to change what specific object to handle.
 
-let objInLocalStorage = new ObjectInLocalStorage();
-objInLocalStorage.key = 'user1';
-objInLocalStorage.set({username: 'papasmurf', password: 'i_love_smurfette'});
+let objInSessionStorage = new ObjectInSessionStorage();
+objInSessionStorage.key = 'user1';
+objInSessionStorage.set({username: 'papasmurf', password: 'i_love_smurfette'});
 
-objInLocalStorage.key = 'user2';
-objInLocalStorage.set({username: 'smurfette', password: 'i_love_papa'});
-
+objInSessionStorage.key = 'user2';
+objInSessionStorage.set({username: 'smurfette', password: 'i_love_papa'});
 ```
 </details>
 
 
 ## Inheritance Chain
 
-ObjectInLocalStorage<--[ObjectInBrowserStorage](https://github.com/writetome51/object-in-browser-storage#objectinbrowserstorage)<--[ItemInBrowserStorage](https://github.com/writetome51/item-in-browser-storage#iteminbrowserstorage)<--[BaseClass](https://github.com/writetome51/typescript-base-class#baseclass)
+ObjectInSessionStorage<--[ObjectInBrowserStorage](https://github.com/writetome51/object-in-browser-storage#objectinbrowserstorage)<--[ItemInBrowserStorage](https://github.com/writetome51/item-in-browser-storage#iteminbrowserstorage)<--[BaseClass](https://github.com/writetome51/typescript-base-class#baseclass)
 
 
 ## Installation
 
 ```bash
-npm i  @writetome51/object-in-local-storage
+npm i  @writetome51/object-in-session-storage
 ```
 
 ## Loading
 ```ts
 // If using TypeScript:
-import {ObjectInLocalStorage} from '@writetome51/object-in-local-storage';
+import {ObjectInSessionStorage} from '@writetome51/object-in-session-storage';
 // If using ES5 JavaScript:
-var ObjectInLocalStorage = 
-    require('@writetome51/object-in-local-storage').ObjectInLocalStorage;
+var ObjectInSessionStorage = 
+    require('@writetome51/object-in-session-storage').ObjectInSessionStorage;
 ```

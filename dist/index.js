@@ -17,17 +17,17 @@ var object_in_browser_storage_1 = require("@writetome51/object-in-browser-storag
 /*****************************
  This class' difference from its parent:
 
- Represents an object or array stored in the browser's `localStorage`.
+ Represents an object or array stored in the browser's `sessionStorage`.
 
  The constructor takes 2 arguments: `key` and `value`.
  *****************************/
-var ObjectInLocalStorage = /** @class */ (function (_super) {
-    __extends(ObjectInLocalStorage, _super);
-    function ObjectInLocalStorage(key, value) {
+var ObjectInSessionStorage = /** @class */ (function (_super) {
+    __extends(ObjectInSessionStorage, _super);
+    function ObjectInSessionStorage(key, value) {
         if (key === void 0) { key = ''; }
         if (value === void 0) { value = undefined; }
-        return _super.call(this, localStorage, key, value) || this;
+        return _super.call(this, sessionStorage, key, value) || this;
     }
-    return ObjectInLocalStorage;
+    return ObjectInSessionStorage;
 }(object_in_browser_storage_1.ObjectInBrowserStorage));
-exports.ObjectInLocalStorage = ObjectInLocalStorage;
+exports.ObjectInSessionStorage = ObjectInSessionStorage;

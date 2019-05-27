@@ -1,7 +1,7 @@
 {
-  "name": "@writetome51/object-in-local-storage",
+  "name": "@writetome51/object-in-session-storage",
   "version": "0.0.1",
-  "description": "A class representing an object or array stored in the browser's localStorage. Makes it incredibly easy to store, modify, and retrieve an object/array from localStorage",
+  "description": "A class representing an object or array stored in the browser's sessionStorage. Makes it incredibly easy to store, modify, and retrieve an object/array from sessionStorage",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/writetome51/object-in-local-storage.git"
+    "url": "git+https://github.com/writetome51/object-in-session-storage.git"
   },
   "keywords": [
     "browser",
-    "local",
+    "session",
     "storage",
     "object",
     "array",
@@ -24,9 +24,9 @@
   "author": "Steve Thompson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/writetome51/object-in-local-storage/issues"
+    "url": "https://github.com/writetome51/object-in-session-storage/issues"
   },
-  "homepage": "https://github.com/writetome51/object-in-local-storage#readme",
+  "homepage": "https://github.com/writetome51/object-in-session-storage#readme",
   "devDependencies": {},
   "dependencies": {
     "@writetome51/object-in-browser-storage": "^3.0.0"
