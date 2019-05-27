@@ -1,0 +1,34 @@
+{
+  "name": "@writetome51/object-in-local-storage",
+  "version": "0.0.1",
+  "description": "A class representing an object or array stored in the browser's localStorage. Makes it incredibly easy to store, modify, and retrieve an object/array from localStorage",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/object-in-local-storage.git"
+  },
+  "keywords": [
+    "browser",
+    "local",
+    "storage",
+    "object",
+    "array",
+    "data",
+    "typescript",
+    "class"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writetome51/object-in-local-storage/issues"
+  },
+  "homepage": "https://github.com/writetome51/object-in-local-storage#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@writetome51/object-in-browser-storage": "^3.0.0"
+  }
+}
